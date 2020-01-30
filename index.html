@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Test ColorBox</title>
-</head>
+	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
+	</head>
 <body>
 	<header>
 		<h1>Test ColorBox</h1>
@@ -15,15 +17,23 @@
 	
 		<div>
 		
-			<a href="illustration/mandala-kyrgyz.png"><img src="illustration/mini/mandala-kyrgyz.png"/></a>
-			<a href="illustration/mandala-multicolore.png"><img src="illustration/mini/mandala-multicolore.png"/></a>
-			<a href="illustration/mandala-kyrgyz.png"><img src="illustration/mini/mandala-kyrgyz.png"/></a>
-		
+			<a data-lightbox="diaporama" href="illustration/mandala-kyrgyz.png"><img src="illustration/mini/mandala-kyrgyz.png"/></a>
+			<a data-lightbox="diaporama" href="illustration/mandala-multicolore.png"><img src="illustration/mini/mandala-multicolore.png"/></a>
+			<a data-lightbox="diaporama" href="illustration/mandala-kyrgyz.png"><img src="illustration/mini/mandala-kyrgyz.png"/></a>
 		
 		</div>
 	
 	</section>
 	
 	<footer><span id="signature"></span></footer>
+	
+	<script src="lightbox/js/jquery-pour-lightbox.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 </body>
 </html>
