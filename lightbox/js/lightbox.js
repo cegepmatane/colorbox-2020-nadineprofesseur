@@ -109,10 +109,9 @@
     this.$image          = this.$lightbox.find('.lb-image');
     this.$nav            = this.$lightbox.find('.lb-nav');
 	
-	this.$outerContainer.css('background-color','#434854');
-	this.$container.css('background-color','yellow');
-	this.$image.css('background-color','red');
-	this.$image.css('border','solid 2px green');
+	this.$outerContainer.css('border-radius','20px');
+	this.$container.css('border-radius','20px');
+	this.$image.css('border-radius','20px');
 
     // Store css values for future lookup
     this.containerPadding = {
