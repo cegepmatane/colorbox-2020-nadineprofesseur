@@ -112,6 +112,8 @@
 	this.$outerContainer.css('border-radius', this.options.borderRadius);
 	this.$container.css('border-radius',this.options.borderRadius);
 	this.$image.css('border-radius',this.options.borderRadius);
+	
+	this.$image.css('border', '4px solid ' + this.options.borderColor);
 
     // Store css values for future lookup
     this.containerPadding = {
